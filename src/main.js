@@ -34,11 +34,12 @@ const feed = (plant) => {
 // const giveLight = changeState("light");
 
 
-// const blueFood = changeState('soil')(10)
+const blueFood = changeState('soil')(5)
+const greenFood = changeState("soil")(10)
 
 
-const storeState = () => {
-  let currentState = {};
+const storeState = (initialState) => {
+  let currentState = initialState; 
   return (stateChangeFunction) => {
     const newState = stateChangeFunction(currentState);
     currentState = {...newState};
@@ -46,4 +47,10 @@ const storeState = () => {
   }
 }
 
+
 const stateControl = storeState();
+
+const fedPlant = stateControl(blueFood);
+const plantFedAgain = stateControl(greenFood);
+console.log(fedPlant)
+console.log(plantFedAgain)
