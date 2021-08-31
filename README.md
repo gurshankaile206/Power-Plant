@@ -1,8 +1,7 @@
-# _Application Name_
+# _PowerPlant_
 
-#### _App Name - 0X/XX/21 - Code Review00X_
 
-#### By _**Jennifer Bordon**_
+#### By _**Gurshan Kaile & Godfrey Owidi**_
 
 ## Technologies Used
 
@@ -20,20 +19,24 @@
 
 ## Description
 
+This Web Application is a fully functioning game where users can feed their plants using functional programming and composition. The Power Plant has the ability to execute the following: 
+
+* Functionality to create multiple plants.
+
+* Functionality so different plants have different abilities
+
+
 ## Setup/Installation Requirements
 * Clone this project into your preferred directory
-* In that directory, there should now be a directory labeled "repoName"
+* In that directory, there should now be a directory labeled "PowerPlant"
 * run `npm i` to install respective plugins/packages
 * run `npm start` to go see a live server of the app
 
-## Github Pages link
-
-[Click here](https://bordonj.github.io/repoHere) for the Github Pages link. 
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* No Known Bugs
+
 
 ## License
 
@@ -42,4 +45,4 @@ Distributed under the MIT License. See LICENSE for more information.
 
 ## Contact Information
 
-_jennifer.bordon@gmail.com_
+If you have any questions or concerns contact us at gurshankaile206@gmail.com or godfreyowiidi@gmail.com
