@@ -25,3 +25,22 @@ const changeState = (prop) => {
   }
 }
 
+
+const feed = changeState("soil")(1);
+const blueFood = changeState("soil")(5);
+
+const hydrate = changeState("water")(1);
+const superWater = changeState("water")(5);
+
+$(document).ready(function() {
+
+    $('#feed').click(function() {
+      const newState = stateControl(blueFood);
+      $('#soil-value').text(`Soil: ${newState.soil}`);
+    });
+  
+    $('#show-state').click(function() {
+      const currentState = stateControl();
+      $('#soil-value').text(`Soil: ${currentState.soil}`);
+    });
+  });
