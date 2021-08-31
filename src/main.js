@@ -47,14 +47,15 @@ $(document).ready(function() {
       $('#water-value').text(`Water: ${newState.water}`);
     });
 
-    $('#hydrate').click(function() {
-      const newState = stateControl(superWater);
-      $('#water-value').text(`Water: ${newState.water}`);
+    $('#giveLight').click(function() {
+      const newState = stateControl(brightLight);
+      $('#light-value').text(`Light: ${newState.light}`);
     });
 
     $('#show-state').click(function() {
       const currentState = stateControl();
       $('#soil-value').text(`Soil: ${currentState.soil}`);
       $('#water-value').text(`Water: ${currentState.water}`);
+      $('#light-value').text(`Light: ${currentState.light}`);
     });
   });
